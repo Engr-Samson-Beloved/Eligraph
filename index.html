@@ -5,8 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Graphics Designer Portfolio</title>
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMpQDGzeQQl6cKqbqqQAsa0aQ4eV4U+OpID5RZx" crossorigin="anonymous">
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </head>
 <body>
 
@@ -30,7 +31,8 @@
   </header>
 <!-- About Section -->
   <section class="about" id="about">
-    <div class="container">
+    <div class="container" data-aos="zoom-in-up"   data-aos-easing="ease-out-cubic"
+    data-aos-duration="1000">
       <div class="about-content">
         <div class="about-image">
           <img src="./Resources/Eligraph1.jpeg" alt="About Me">
@@ -45,7 +47,7 @@
     </div>
   </section>
 <!-- Portfolio Section -->
-  <section class="portfolio" id="portfolio">
+  <section class="portfolio" id="portfolio" data-aos="fade-up">
     <h2>Portfolio</h2>
     <div class="portfolio-gallery">
       <div class="portfolio-item">
@@ -74,7 +76,8 @@
   </section>
    
 <!-- work experience -->
-<section class="work-experience" id="work-experience">
+<section class="work-experience" id="work-experience" data-aos="fade-up"
+data-aos-anchor-placement="center-center">
     <h2>Work Experience</h2>
     <div class="experience-container">
       <div class="experience">
@@ -125,7 +128,8 @@
       </div>
     </div>
 </section>
-  <section class="testimonials" id="testimonials">
+  <section class="testimonials" id="testimonials" data-aos="fade-up"
+  data-aos-anchor-placement="center-center">
     <h2>Testimonials</h2>
     <div class="testimonial-container">
       <div class="testimonial">
@@ -146,7 +150,8 @@
     </div>
   </section>
  <!-- Contact Section -->
- <section class="contact" id="contact">
+ <section class="contact" id="contact" data-aos="fade-up"
+ data-aos-anchor-placement="center-center">
     <h2>Contact Me</h2>
     <form>
       <input type="text" placeholder="Name">
@@ -157,7 +162,8 @@
   </section>
   
   <footer>
-    <div class="footer-content">
+    <div class="footer-content" data-aos="fade-up"
+    data-aos-anchor-placement="center-center">
       <h3>Connect with Me</h3>
       <ul class="social-media-links">
         <li><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
@@ -170,8 +176,12 @@
   </footer>
   
   <!-- Font Awesome -->
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <!-- <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> -->
   <script src="scripts.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   
 </body>
 </html>
